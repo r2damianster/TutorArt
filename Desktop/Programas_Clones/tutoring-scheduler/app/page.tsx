@@ -128,8 +128,8 @@ export default function StudentView() {
         const { data } = await supabase.from("horarios").select("*").order("dia_semana").order("hora_inicio")
         setHorarios(data as Horario[])
         setReservation({ studentName: "", program: "", email: "", telefono: "" })
-        setIsDialogOpen(false)
-        setSelectedSlot(null)
+      setIsDialogOpen(false)
+      setSelectedSlot(null)
       } else {
         alert("Error al reservar. Intenta de nuevo.")
       }
@@ -169,9 +169,9 @@ export default function StudentView() {
             className="bg-gray-800 border-gray-600 text-white hover:bg-gray-700"
             onClick={() => setAuthDialogOpen(true)}
           >
-            <Settings className="w-4 h-4 mr-2" />
-            Administrador
-          </Button>
+              <Settings className="w-4 h-4 mr-2" />
+              Administrador
+            </Button>
         </div>
 
         {/* Week Navigation */}
