@@ -1,0 +1,41 @@
+{
+  "buildCommand": "pnpm run build",
+  "outputDirectory": ".next",
+  "devCommand": "pnpm run dev",
+  "installCommand": "pnpm install",
+  "framework": "nextjs",
+  "rootDirectory": "Desktop/Programas_Clones/tutoring-scheduler",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "Desktop/Programas_Clones/tutoring-scheduler/app/api/**/*.js": {
+      "runtime": "nodejs18.x"
+    },
+    "Desktop/Programas_Clones/tutoring-scheduler/app/api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}
