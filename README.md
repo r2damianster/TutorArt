@@ -1,7 +1,5 @@
 # Sistema de Agendamiento de TutorÃ­as - Dr. Arturo RodrÃ­guez
 
-
-
 Un sistema web moderno para la gestiÃ³n y agendamiento de tutorÃ­as acadÃ©micas, desarrollado con Next.js y conectado a una base de datos en **Supabase**, diseÃ±ado especÃ­ficamente para el Dr. Arturo RodrÃ­guez, PhD.
 
 ---
